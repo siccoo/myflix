@@ -7,7 +7,10 @@ export default function App() {
     <Jumbotron.Container>
       {jumboData.map((item) => (
         <Jumbotron key={item.id} direction={item.direction}>
-          <p>Hello</p>
+          <p>{item.id}</p>
+          <p>{item.subTitle}</p>
+          <p>{item.title}</p>
+          <p>{item.image}</p>
         </Jumbotron>
       ))}
     </Jumbotron.Container>
